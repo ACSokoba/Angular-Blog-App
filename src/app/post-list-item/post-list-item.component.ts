@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class PostListItemComponent implements OnInit {
 
   constructor() { }
+  lastUpdate = new Date();
 
   @Input() title: string;
   @Input() content: string;

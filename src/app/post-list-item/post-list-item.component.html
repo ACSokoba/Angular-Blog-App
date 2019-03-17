@@ -4,6 +4,7 @@
 
   <div [ngStyle]="{color: getColor()}">
     <h4>{{ title }} </h4>
+    <p align="right"> Mis à jour : {{lastUpdate | date : 'dd/MM/yyyy'}} </p>
     <p>{{content}}</p>
   </div>
   <button type="button" class="btn btn-labeled btn-success" (click)="upvote()">
@@ -15,3 +16,4 @@
 
 
 </li>
+
