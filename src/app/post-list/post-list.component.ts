@@ -1,14 +1,15 @@
-import { Component, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-post-list',
+  templateUrl: './post-list.component.html',
+  styleUrls: ['./post-list.component.css']
 })
-export class AppComponent {
-  title = 'blog-app-angular';
+export class PostListComponent implements OnInit {
 
-  @Input() postsArrayIn = [
+  constructor() { }
+
+  postsArray = [
     {
       title: 'To sorry',
       content: 'To sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him.',
@@ -28,4 +29,9 @@ export class AppComponent {
 
     }
   ];
+
+  
+  ngOnInit() {
+  }
+
 }
